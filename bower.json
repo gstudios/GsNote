@@ -1,0 +1,23 @@
+{
+  "name": "GsNote",
+  "version": "0.1.0",
+  "homepage": "https://github.com/gstudios/GsNote",
+  "authors": [
+    "Marco Galbanie <setrukmarcroger@gmail.com>"
+  ],
+  "description": "BlocNote desktop",
+  "main": "src/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests",
+    "src/components"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14"
+  }
+}
