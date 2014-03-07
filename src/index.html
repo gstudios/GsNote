@@ -1,19 +1,19 @@
 <html ng-app="gsnote">
 	<head>
 		<title>GsNote</title>
-		<!--link rel="stylesheet" type="text/css" href="app/css/base.css">
-		<link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css"-->
+		<!--link rel="stylesheet" type="text/css" href="components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css"-->
+		<link rel="stylesheet" type="text/css" href="app/css/base.css">
+		<link rel="stylesheet" type="text/css" href="app/css/gsnote.css">
 	</head>
-	<body>
+	<body ng-controller="MainCtrl">
 		<section id="gsnote">
 			<header id="header">
 				<h1>BlocNote</h1>
-				<a ng-click="" href="#">New</a>
+				<input type="text" id="new-note" placeholder="Cliquer pour une nouvelle note" ng-click="newNote()">
 			</header>
-			<section id="main">
-				<ul id="note-list">
-					<li></li>
-				</ul>
+			<section ng-view id="main">
+				
 			</section>
 			<footer id="footer">
 				<span id="note-count"></span>
@@ -27,7 +27,9 @@
 	</body>
 	<footer>
 		<script src="components/angular/angular.min.js"></script>
+		<script src="components/angular-route/angular-route.min.js"></script>
 		<script type="text/javascript" src="app/js/app.js"></script>
+		<script type="text/javascript" src="app/js/services.js"></script>
 		<script type="text/javascript" src="app/js/routes.js"></script>
 		<script type="text/javascript" src="app/js/controllers.js"></script>
 	</footer>

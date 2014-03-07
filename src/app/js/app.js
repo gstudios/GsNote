@@ -1,1 +1,1 @@
-var gsnote = angular.module('gsnote',[]);
+var gsnote = angular.module('gsnote',['ngRoute']);
