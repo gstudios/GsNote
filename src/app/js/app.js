@@ -1,0 +1,1 @@
+var gsnote = angular.module('gsnote',[]);
